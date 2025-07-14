@@ -10,7 +10,7 @@ RUN apt-get -y update \
     && apt-get clean
 
 ## To enable rclone upload, uncommnet the following line; 
- RUN curl https://rclone.org/install.sh | bash
+ RUN wget https://rclone.org/install.sh | bash
 
 RUN python3 -m venv venv && chmod +x venv/bin/python
 
